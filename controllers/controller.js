@@ -1,3 +1,5 @@
+const nodemailer = require('nodemailer');
+
 module.exports = {
     index: function(req, res) {
         res.render('default/home');
@@ -45,7 +47,7 @@ contactPOST: function(req, res) {
         <h3>Message</h3>
         <p>${req.body.message}</p>
       `;
-        console.log(output)
+      console.log(output)
        // create reusable transporter object using the default SMTP transport
        let transporter = nodemailer.createTransport({
         host: 'mail.privateemail.com',
@@ -63,7 +65,7 @@ contactPOST: function(req, res) {
       // setup email data with unicode symbols
       let mailOptions = {
         from: '"Derry UKERE" <info@derryukere.me>', // sender address
-        to: 'ukderry@gmail.com', // list of receivers
+        to: 'mudiagaukere@gmail.com', // list of receivers
         subject: 'New Contact Request', // Subject line
         text: 'contact Request', // plain text body
         html: output // html body

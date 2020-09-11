@@ -1,3 +1,35 @@
 #bg-img{
   background-image:url("../images/contact.jpg");
 }
+
+.error{
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+  color: #dc3545;
+}
+
+.success{
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+  color: white;
+}
+.wait{
+  background-color: #777 !important;
+  border-color: #777 !important;
+}
+
+ .contact-feedback {
+  display: none;
+  margin: 0;
+  margin-top: 8px;
+ }
+
+ .contact-feedback.success{
+  color: #28a745;
+
+ }
+
+ .contact-feedback.success{
+  color: #dc3545;
+
+ }

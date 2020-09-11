@@ -46,5 +46,22 @@
 		}
 
 		$( 'body' ).addClass( browser_class );
+		
+		$('#contact-form').on('submit', (e)=>{
+			e.preventDefault()
+			var form =$('#contact-form')
+			var message =$('#contact-submit')
+		
+			
+			form[0].reset();
+			message.addClass('success').html('Thank you for your message. It has been sent').fadeIn(200)
+	  
+	  
+			  $.post("/contact", data)
+				console.log('server received data')
+			});
+
+
 	});
+	
 })(jQuery);
