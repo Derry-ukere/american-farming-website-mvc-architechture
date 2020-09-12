@@ -54,8 +54,8 @@ contactPOST: function(req, res) {
         port: 465,
         secure: true, // true for 465, false for other ports
         auth: {
-            user: "info@derryukere.me", // generated ethereal user
-            pass: "Derryukere1256"  // generated ethereal password
+            user: "xxxxxxxxxxxx", // generated ethereal user
+            pass: "xxxxxxxxxxx"  // generated ethereal password
         },
         tls:{
           rejectUnauthorized:false
