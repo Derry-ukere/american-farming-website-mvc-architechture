@@ -1,4 +1,5 @@
 <script type="text/javascript" src="javascripts/floating-wapp.js"></script>
+
 (function($){
 	$(document).ready( function(){
 		var user_agent = navigator.userAgent;

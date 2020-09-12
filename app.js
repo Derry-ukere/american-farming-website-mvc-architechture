@@ -3,7 +3,6 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-const port = process.env.PORT || 3000;
 const indexRouter = require('./routes/routes');
 const exphbs  = require('express-handlebars');
 
@@ -43,6 +42,7 @@ app.use(function(err, req, res, next) {
 });
 
 
-app.listen(port, () => {
+app.listen(process.env.PORT || 3000
+  , () => {
   console.log(`Server running...`);
 });
