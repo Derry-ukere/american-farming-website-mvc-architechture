@@ -12,6 +12,7 @@
 					<div class="entry-content">
 						<div id="et-boc" class="et-boc">
 							<div class="et_builder_inner_content et_pb_gutters3">
+							<div id="whatsappbutton" 	style="z-index:100; background-repeat:no-repeat;" ></div>
 								{{{ body }}}
 								{{> default/botton-session }}					
 							</div>
@@ -24,4 +25,16 @@
 		</div> <!-- #page-container -->
 			{{> default/footer }}
 	</body>
+	<script type="text/javascript">  
+   $(function () {
+                $('#whatsappbutton').floatingWhatsApp({
+               phone: '1234567890', //WhatsApp Business phone number
+               headerTitle: 'Chat with us on WhatsApp!', //Popup Title
+               popupMessage: 'Hello, we are online to chat with you?', //Popup Message
+               showPopup: true, //Enables popup display
+               buttonImage: '<img src="images/whatsapp.png"/>',
+               position: "right" //Position: left | right
+           });
+       });
+</script> 
 </html>
