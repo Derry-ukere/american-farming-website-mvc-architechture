@@ -1,5 +1,3 @@
-<script type="text/javascript" src="javascripts/floating-wapp.js"></script>
-
 (function($){
 	$(document).ready( function(){
 		var user_agent = navigator.userAgent;
@@ -49,11 +47,7 @@
 
 		$( 'body' ).addClass( browser_class );
 
-		$('#myDiv').floatingWhatsApp({
-			phone: '5491133359850'
-		  });
-		});
-
+		
 		$('#contact-form').on('submit', (e)=>{
 			e.preventDefault()
 			var form =$('#contact-form')
